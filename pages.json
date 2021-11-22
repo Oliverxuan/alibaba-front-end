@@ -1,0 +1,108 @@
+{
+	"pages": [
+		{
+		    "path" : "pages/me/me",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,
+		{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "阿巴阿巴"
+			}
+		} 
+		,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        }
+		,{
+            "path" : "pages/login/registration",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        },
+		{
+			"path" : "pages/garden/garden",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "阿巴乐园",
+				"enablePullDownRefresh": false
+			}
+		}
+        ,{
+            "path" : "pages/shop/shop",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "阿巴商城",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+				"path": "uview-ui/components/u-full-screen/u-full-screen",
+				"style": {
+					"navigationStyle": "custom",  
+					"app-plus": {
+						"animationType": "fade-in", 
+						"background": "transparent", 
+						"backgroundColor": "rgba(0,0,0,0)", 
+						"popGesture": "none" 
+					}
+				}
+			}
+    ],
+	"tabBar":{
+		"list":[
+			{
+				"text":"阿巴计划养成",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tabBar/home.png",
+				"selectedIconPath":"static/tabBar/home-a.png"
+			},
+			{
+				"text":"阿巴乐园",
+				"pagePath":"pages/garden/garden",
+				"iconPath":"static/tabBar/worm.png",
+				"selectedIconPath":"static/tabBar/worm-a.png"
+			},
+			{
+				"text":"阿巴的家",
+				"pagePath":"pages/me/me",
+				"iconPath":"static/tabBar/user.png",
+				"selectedIconPath":"static/tabBar/user-a.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition" : { 
+		"current": 0,
+		"list": [
+			{
+				"name": "", 
+				"path": "",
+				"query": "" 
+			}
+		]
+	},
+
+	"easycom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+			"^vue-file-(.*)": "packageName/path/to/vue-file-$1.vue"
+		}
+}
